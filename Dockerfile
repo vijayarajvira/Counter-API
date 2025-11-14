@@ -2,7 +2,7 @@
 
 FROM node:18 AS backend
 WORKDIR /app
-COPY api/ ./
+COPY . .
 RUN npm install
 
 FROM nginx:alpine
